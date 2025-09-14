@@ -11,7 +11,7 @@ import {
 //0086cd
 export const Navbar = () => {
   return (
-    <nav className={`p-6 mt-2 container mx-auto items-center  justify-between bg-navbar-bg flex`}>
+    <nav className={`p-6 container mx-auto items-center  justify-between bg-navbar-bg flex`}>
       <div className="flex items-center gap-7">
         <Link href={"/"}>
           <img src="logo.png" width={130} />
