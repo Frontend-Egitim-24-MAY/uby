@@ -35,6 +35,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+# RULES & DESIGN
 
-# FİGMA
+## FİGMA
+
 - https://www.figma.com/design/KAhGfyTcgBE6lIoOwiAh7h/Untitled?node-id=11-2&t=OOt7f5428jYuUSFz-1
+
+## GİT
+
+- branch isimlendirmesi şartları
+- örnek branch ismi: <adınız>/customizing-colors
