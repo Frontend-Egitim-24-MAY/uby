@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
+import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,14 +26,32 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <nav className="p-6  items-center justify-between bg-[#0f1f47] flex relative">
-          <img src="/a.webp" alt="Logo" className="w-22 h-22 select-none" draggable="false" />
+          <img
+            src="/a.webp"
+            alt="Logo"
+            className="w-22 h-22 select-none"
+            draggable="false"
+          />
           <NavigationMenu>
             <NavigationMenuList className="flex flex-row gap-2">
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-xl text-[#b3bdb3] flex cursor-pointer p-2 items-center gap-1 hover:bg-blue-400 hover:text-white">
                   ADMISSIONS
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1">
-                    <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block ml-1"
+                  >
+                    <path
+                      d="M5 8L10 13L15 8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </NavigationMenuTrigger>
 
@@ -57,12 +76,24 @@ export default function RootLayout({
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
-
               <NavigationMenuItem>
                 <NavigationMenuTrigger className=" text-xl text-[#b3bdb3] flex p-2 cursor-pointer items-center gap-1 hover:bg-blue-400 hover:text-white">
                   RESEARCH
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1">
-                    <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block ml-1"
+                  >
+                    <path
+                      d="M5 8L10 13L15 8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="absolute top-full bg-white text-blue-400 shadow-md w-2xs">
@@ -94,8 +125,21 @@ export default function RootLayout({
               <NavigationMenuItem>
                 <NavigationMenuTrigger className=" text-xl text-[#b3bdb3] flex cursor-pointer p-2 items-center gap-1 hover:bg-blue-400 hover:text-white">
                   NEWS & EVENTS
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1">
-                    <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block ml-1"
+                  >
+                    <path
+                      d="M5 8L10 13L15 8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="absolute top-full bg-white text-blue-400 shadow-md w-2xs">
@@ -137,8 +181,21 @@ export default function RootLayout({
               <NavigationMenuItem>
                 <NavigationMenuTrigger className=" text-xl text-[#b3bdb3] flex cursor-pointer p-2 items-center gap-1 hover:bg-blue-400 hover:text-white">
                   ABOUT
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1">
-                    <path d="M5 8L10 13L15 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block ml-1"
+                  >
+                    <path
+                      d="M5 8L10 13L15 8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="absolute top-full bg-white text-blue-400 shadow-md w-2xs">
@@ -161,13 +218,29 @@ export default function RootLayout({
           <div className="relative flex items-center">
             <div className="p-2 bg-[#081c34] text-[#b3bdb3] flex items-center justify-center h-10 min-w-[80px] gap-1 cursor-pointer hover:bg-[#00142b] hover:text-white">
               <span className="text-sm leading-none">Colleges</span>
-              <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="ml-1 text-[#b3bdb3]">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                className="ml-1 text-[#b3bdb3]"
+              >
                 <path d="M5 8L10 13L15 8Z" />
               </svg>
             </div>
             <div className="p-2 bg-[#081c34] text-[#b3bdb3] flex items-center justify-center h-10 min-w-[80px] gap-1 cursor-pointer hover:text-white">
-              <span className="text-sm leading-none">Divisions & departments</span>
-              <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="ml-1 text-[#b3bdb3]">
+              <span className="text-sm leading-none">
+                Divisions & departments
+              </span>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                className="ml-1 text-[#b3bdb3]"
+              >
                 <path d="M5 8L10 13L15 8Z" />
               </svg>
             </div>
@@ -181,7 +254,7 @@ export default function RootLayout({
               type="button"
               tabIndex={-1}
               className="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded focus:outline-none transition-colors duration-200 bg-transparent cursor-pointer"
-              style={{ pointerEvents: 'auto' }}
+              style={{ pointerEvents: "auto" }}
               aria-label="Search"
             >
               <svg
@@ -219,6 +292,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <Footer />
       </body>
     </html>
   );
