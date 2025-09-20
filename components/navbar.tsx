@@ -39,7 +39,7 @@ export const Navbar = () => {
                 </svg>
               </NavigationMenuTrigger>
 
-              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs">
+              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs z-50">
                 <ul className="flex flex-col gap-2">
                   <li className="hover:bg-navigation-menu-content-ul-hover-bg hover:text-navigation-menu-content-ul-li-hover-text p-2 cursor-pointer">
                     <NavigationMenuLink asChild>
@@ -80,7 +80,7 @@ export const Navbar = () => {
                   />
                 </svg>
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs">
+              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs z-50">
                 <ul className="flex flex-col gap-2">
                   <li className="hover:bg-navigation-menu-content-ul-hover-bg hover:text-navigation-menu-content-ul-li-hover-text p-2 cursor-pointer">
                     <NavigationMenuLink asChild>
@@ -126,7 +126,7 @@ export const Navbar = () => {
                   />
                 </svg>
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs">
+              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs z-50">
                 <ul className="flex flex-col gap-2">
                   <li className="hover:bg-navigation-menu-content-ul-hover-bg hover:text-navigation-menu-content-ul-li-hover-text p-2 cursor-pointer">
                     <NavigationMenuLink asChild>
@@ -163,7 +163,7 @@ export const Navbar = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className=" text-xl text-[#b3bdb3] flex cursor-pointer p-2 items-center gap-1 hover:bg-blue-400 hover:text-white  border-r border-[#b3bdb3]">
+              <NavigationMenuTrigger className=" text-xl text-navbar-text flex cursor-pointer p-2 items-center gap-1 hover:bg-navbar-hover-bg hover:text-navbar-hover-text border-r border-navbar-border">
                  <Link href="/about">ABOUT</Link>
                 <svg
                   width="16"
@@ -182,14 +182,14 @@ export const Navbar = () => {
                   />
                 </svg>
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="absolute top-full bg-white text-blue-400 shadow-md w-2xs">
+              <NavigationMenuContent className="absolute top-full bg-navigation-menu-content-bg text-navigation-menu-text shadow-md w-2xs z-50">
                 <ul className="flex flex-col gap-2">
-                  <li className="hover:bg-blue-400 hover:text-white p-2 cursor-pointer">
+                  <li className="hover:bg-navigation-menu-content-ul-hover-bg hover:text-navigation-menu-content-ul-li-hover-text p-2 cursor-pointer">
                     <NavigationMenuLink asChild>
                       <Link href="/">Events</Link>
                     </NavigationMenuLink>
                   </li>
-                  <li className="hover:bg-blue-400 hover:text-white p-2 cursor-pointer">
+                  <li className="hover:bg-navigation-menu-content-ul-hover-bg hover:text-navigation-menu-content-ul-li-hover-text p-2 cursor-pointer">
                     <NavigationMenuLink asChild>
                       <Link href="/">Pulse</Link>
                     </NavigationMenuLink>
