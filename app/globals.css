@@ -4,12 +4,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --color-navbar-bg: #041016;
+  --color-navbar-bg: #041016;
   --color-navbar-text: #b3bdb3;
   --color-navbar-hover-bg: #0086cd;
   --color-navbar-hover-text: #ffffff;
   --color-border-color: #b3bdb3;
-  --color-navbar-border: #b3bdb3;
+  --color-border: #b3bdb3;
   --color-navigation-menu-content-bg: #0a2233;
   --color-navigation-menu-text: #b3bdb3;
   --color-navigation-menu-content-ul-hover-bg: #0086cd;
