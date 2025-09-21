@@ -4,6 +4,7 @@ import { Instagram } from "@/public/icons/instagram";
 import { Youtube } from "@/public/icons/youtube";
 import { Facebook } from "@/public/icons/facebook";
 import { LinkIcon } from "@/public/icons/link";
+import { JSX } from "react";
 
 // Sosyal link tipi
 type SocialLink = {
