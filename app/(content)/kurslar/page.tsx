@@ -19,9 +19,11 @@ export default function AdmissionsPage() {
     return <h1>Yükleniyor </h1>;
   }
   return (
-    <div className="container mx-auto">
+    <div className="columns-1 sm:columns-1 md:columns-2 lg:columns-3 gap-8">
       {data.map((post, idx) => (
-        <Card post={post} key={idx}/>
+        <div className="break-inside-avoid mb-6" key={idx}>
+          <Card post={post} />
+        </div>
       ))}
     </div>
   );

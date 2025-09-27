@@ -13,8 +13,8 @@ type NavLink = {
 
 const links: NavLink[] = [
   {
-    title: "EĞİTİMLER",
-    href: "/egitimler",
+    title: "KURSLAR",
+    href: "/kurslar",
     subContent: [
       { title: "Makine", href: "/egitimler/makine" },
       { title: "Yazılım", href: "/egitimler/yazilim" },
@@ -79,16 +79,16 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
+import Image from "next/image";
 export const Navbar = () => {
   return (
     <nav className={`bg-navbar-bg`}>
       <div className="container mx-auto flex justify-between py-6 items-center">
         <div className="flex items-center gap-7">
           <Link href={"/"}>
-            <img src="logo.png" width={130} />
+            <Image src="/logo.png" width={115} alt="logo" height={70} />
           </Link>
           <NavigationMenu>
-            {" "}
             <NavigationMenuList className="flex flex-row ">
               {links.map((link) => (
                 <NavigationMenuItem key={link.title}>
