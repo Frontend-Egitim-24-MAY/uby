@@ -26,14 +26,13 @@ export default function Layout({
   }
 
   const items = pathName.split('/').filter(item => item !== '');
-  console.log("items:   ---   ", items)
   return (
     <div>
       <div className="min-h-screen">
         <Navbar />
         <div className="px-16">
 
-        <div className="container mx-auto py-4">
+        <div className="container mx-auto py-4  ">
 
         {
           (isHome || hasFileExtension) ? null : (

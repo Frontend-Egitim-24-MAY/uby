@@ -10,6 +10,7 @@ export const getAllPosts = async (): Promise<{
             _id,
             title,
             content,
+            slug,
             description,
             publishedAt,
             mainImage{
@@ -21,6 +22,7 @@ export const getAllPosts = async (): Promise<{
             "categories":  categories[]->{
               title,
               description,
+              slug,
             },
         
             "author": author -> {
@@ -44,3 +46,5 @@ export const getAllPosts = async (): Promise<{
     return { error: "Beklenmeyen bir hata oluştu", data: null };
   }
 };
+
+

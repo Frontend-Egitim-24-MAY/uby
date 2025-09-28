@@ -1,9 +1,12 @@
 import { Post } from "@/types/sanityTypes";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Card = ({ post }: { post: Post }) => {
+  console.log("post: ", post);
   return (
-    <div className="h-auto">
+    <Link href={`/kurslar/${post.categories[0].slug.current}/${post.slug.current}`} className="h-auto">
       <div className="w-full">
         <Image
           src={post.mainImage.asset.url}
@@ -17,6 +20,6 @@ export const Card = ({ post }: { post: Post }) => {
         <h1 className="font-bold text-2xl">{post.title}</h1>
         <p>{post.description}</p>
       </div>
-    </div>
+    </Link>
   );
 };
