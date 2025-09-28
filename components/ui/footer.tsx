@@ -6,7 +6,7 @@ import { Facebook } from "@/public/icons/facebook";
 import { LinkIcon } from "@/public/icons/link";
 import { JSX } from "react";
 
-// Sosyal link tipi
+
 type SocialLink = {
   id: number;
   icon: JSX.Element;
