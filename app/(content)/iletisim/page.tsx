@@ -1,106 +1,136 @@
-
-
 export default function Contact() {
-  
-
-    return (
-        <div
-            
-            className="flex container mx-auto justify-start items-center "
-        >
-            <div className="w-full max-w-2xl">
-                {/* Header Section */}
-                <div className="mb-12">
-                    <h1 className="text-4xl mb-4">İletişim Bilgileri</h1>
-
-                    <h2>Kadıköy Şube</h2>
-                        <a target="_blank" href="https://maps.app.goo.gl/qA2DamwM9K6ge9yf6" className="border-navigation-menu-content-ul-hover-bg/40 border-b-2 hover:border-navigation-menu-content-ul-hover-bg duration-200 cursor-pointer">Adresimiz</a>
-                        : Caferağa Mahallesi Mühürdar Caddesi No: 50 Kadıköy / İstanbul
-                    <h2>Mecidiyeköy Şube</h2>
-                    <a target="_blank" href="https://maps.app.goo.gl/qA2DamwM9K6ge9yf6" className="border-navigation-menu-content-ul-hover-bg/40 border-b-2 hover:border-navigation-menu-content-ul-hover-bg duration-200 cursor-pointer">Adresimiz</a>
-                    :Eski Osmanlı Sokak. No:40 Kat:5 Mecidiyeköy/İstanbul
-                    <h2 className="">Telefon</h2>
-                    <a target="_blank"  href="tel:444 3 111" className="border-navigation-menu-content-ul-hover-bg/40 border-b-2 hover:border-navigation-menu-content-ul-hover-bg duration-200 cursor-pointer">Bize Ulaşın </a> 
-                    444 3 111
-                    <h2 className="">Mail Adresi</h2>
-                    <a className="border-navigation-menu-content-ul-hover-bg/40 border-b-2 hover:border-navigation-menu-content-ul-hover-bg duration-200 cursor-pointer" href="mailto:bilgi@ucuncubinyil.com">bilgi@ucuncubinyil.com</a>
-
-
-
-                </div>
-            </div>
-
-            {/* <div className="bg-neutral-100 dark:bg-neutral-800 rounded-2xl p-8 shadow-lg container justify-end items-center ">
-                <form className="space-y-6" onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="name" className="block text-sm font-medium mb-2" >
-                            Adınız Soyadınız**
-                        </label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            className="w-full rounded-xl border border-gray-300 dark:border-gray-600 shadow-sm p-3 outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-neutral-700"
-                            placeholder="Adınızı girin"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium mb-2">
-                            E-posta**
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            className="w-full rounded-xl border border-gray-300 dark:border-gray-600 shadow-sm p-3 outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-neutral-700"
-                            placeholder="E-posta adresinizi girin"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="topic" className="block text-sm font-medium mb-2">
-                            Konu
-                        </label>
-                        <input
-                            type="text"
-                            id="topic"
-                            name="topic"
-                            required
-                            className="w-full rounded-xl border border-gray-300 dark:border-gray-600 shadow-sm p-3 outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-neutral-700"
-                            placeholder="Mesaj konusunu girin"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="message" className="block text-sm font-medium mb-2">
-                            Mesaj
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows={5}
-                            className="w-full rounded-xl border border-gray-300 dark:border-gray-600 shadow-sm p-3 outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-neutral-700 resize-vertical"
-                            placeholder="Mesajınızı buraya yazın"
-                        />
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="w-full bg-amber-400 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl transition-colors duration-200"
-                    >
-                        Mesajı Gönder
-                    </button>
-                </form>
-                <div className="mt-12 text-center">
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Mesajınızı aldıktan sonra en kısa sürede size dönüş yapacağız.
-                    </p>
-                </div>
-            </div> */}
+  return (
+    <div className="flex container mx-auto justify-start items-center ">
+      <div className="w-full max-w-2xl">
+        {/* Header Section */}
+        <div className="mb-12 space-y-10">
+          <section>
+            <h1 className="text-4xl mb-4">İletişim Bilgileri</h1>
+          </section>
+          <section>
+            <a
+              target="_blank"
+              href="https://maps.app.goo.gl/qA2DamwM9K6ge9yf6"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl mr-2"
+            >
+              Kadıköy Şube
+            </a>
+            <span>
+              Caferağa Mahallesi Mühürdar Caddesi No: 50 Kadıköy / İstanbul
+            </span>
+            <br />
+            <a
+              target="_blank"
+              href="https://maps.app.goo.gl/qA2DamwM9K6ge9yf6"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl mr-2"
+            >
+              Mecidiyeköy Şube
+            </a>
+            <span>Eski Osmanlı Sokak. No:40 Kat:5 Mecidiyeköy/İstanbul</span>
+          </section>
+          <section>
+            <span>Bizimle özel olarak iletişim kurmak isterseniz </span>
+            <a
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl mx-2"
+              href="mailto:bilgi@ucuncubinyil.com"
+            >
+              bilgi@ucuncubinyil.com
+            </a>
+            <span> adresinden bize mail gönderebilir, veya </span>
+            <a
+              href="tel:444 3 111"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl mx-2"
+            >
+              444 3 111
+            </a>
+            <span> no'lu telefon numaramızdan bizlre ulaşabilirsiniz</span>
+          </section>
+          <section>
+            <span>Ayrıca </span>
+            <a
+              href="https://www.instagram.com/ucuncubinyil/"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl"
+            >
+              Instagram
+            </a>
+            <span>, </span>
+            <a
+              href="https://x.com/ucuncubinyil"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl "
+            >
+              X
+            </a>
+            <span>, </span>
+            <a
+              href="https://www.facebook.com/UcuncuBinyil/"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl "
+            >
+              Facebook
+            </a>
+            <span>, </span>
+            <a
+              href="https://www.linkedin.com/company/ucuncubinyil/posts/"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl "
+            >
+              LinkedIn
+            </a>
+            <span>, </span>
+            <a
+              href="https://www.youtube.com/channel/UC4tBCMfJbRmx85X8B4xhyrg"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl "
+            >
+              Youtube
+            </a>
+            <span> veya </span>
+            <a
+              href="https://api.whatsapp.com/send/?text=%C3%9C%C3%A7%C3%BCnc%C3%BC+Biny%C4%B1l+Akademi+E%C4%9Fitimlerini+%C4%B0nceleyiniz.+https%3A%2F%2Fwww.ucuncubinyil.com&type=custom_url&app_absent=0"
+              target="_blank"
+              className="border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-xl "
+            >
+              Whatsapp
+            </a>
+            <span>
+              {" "}
+              üzerinden de bizlere ulaşabilir veya takip edebilirsiniz.
+            </span>
+          </section>
+          <section>
+            <span>
+              Diğer web sitelerimizi de ziyaret edebilir ve
+              eğitimlerimiz/hizmetlerimiz hakkında daha fazla fikir sahibi
+              olabilirsiniz
+            </span>
+            <ul className="pl-8  py-6">
+              <li className="group flex w-fit items-center py-4 gap-4 hover:gap-8 duration-400">
+                <a
+                  href="https://muhendisfabrikasi.com/"
+                  target="_blank"
+                  className="border-primary/40 border-b-2 group-hover:border-primary duration-200 cursor-pointer text-xl "
+                >
+                  muhendisfabrikasi.com
+                </a>
+                <div className="w-2 h-2 bg-primary rounded-full group-hover:w-3 group-hover:h-3 duration-400"></div>
+              </li>
+              <li className="group flex w-fit items-center py-4 gap-4 hover:gap-6 duration-400 ">
+                <a
+                  href="https://www.milimetrik.com/"
+                  target="_blank"
+                  className="border-primary/40 border-b-2 group-hover:border-primary duration-200 cursor-pointer text-xl"
+                >
+                  milimektric.com
+                </a>
+                <div className="w-2 h-2 bg-primary rounded-full group-hover:w-3 group-hover:h-3 duration-400"></div>
+              </li>
+            </ul>
+          </section>
         </div>
-    );
+      </div>
+    </div>
+  );
 }

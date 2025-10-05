@@ -92,7 +92,7 @@ export const Navbar = () => {
             <NavigationMenuList className="flex flex-row ">
               {links.map((link) => (
                 <NavigationMenuItem key={link.title}>
-                  <NavigationMenuTrigger className="text-xl text-navbar-text flex cursor-pointer px-4 p-2 items-center gap-1 hover:bg-navbar-hover-bg hover:text-navbar-hover-text border-r border-border/20">
+                  <NavigationMenuTrigger className="text-xl text-navbar-text flex cursor-pointer px-4 p-2 items-center gap-1 hover:bg-primary hover:text-navbar-hover-text border-r border-border/20">
                     <Link href={link.href}>{link.title}</Link>
                     {link.subContent != undefined && (
                       <svg
@@ -120,7 +120,7 @@ export const Navbar = () => {
                         <NavigationMenuLink key={item.title} asChild>
                           <Link
                             href={item.href}
-                            className="hover:bg-navigation-menu-content-ul-hover-bg hover:text-navigation-menu-content-ul-li-hover-text p-2 cursor-pointer"
+                            className="hover:bg-primary hover:text-popover hover:font-medium transition duration-200 p-2 cursor-pointer"
                           >
                             {item.title}
                           </Link>
