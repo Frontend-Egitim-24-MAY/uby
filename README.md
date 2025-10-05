@@ -45,3 +45,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - branch isimlendirmesi şartları
 - örnek branch ismi: <adınız>/customizing-colors
+
+## ENVIRONMENTS
+
+NEXT_PUBLIC_SANITY_PROJECT_ID=vthf7gfo
+NEXT_PUBLIC_SANITY_DATASET=production
+
