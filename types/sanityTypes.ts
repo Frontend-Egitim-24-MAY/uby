@@ -7,24 +7,24 @@ type Author = {
 };
 
 type Category = {
-  id : number;
-  slug: string;
-  title: string;
-  description: string;
+  _id?: string;
+  slug?: { current: string } | string;
+  title?: string;
+  description?: string;
 };
 
 type Image = 
 {
   alt: string;
-  asset: {url: string};
+  asset: { url: string };
 }
 
 export type Post = {
   _id: string;
   author: Author;
-  slug: string;
-  mainImage: Image;
-  categories: Category;
+  slug: { current: string } | string;
+  mainImage?: Image;
+  categories?: Category[];
   publishedAt: string;
   title: string;
   body: PortableTextBlock;

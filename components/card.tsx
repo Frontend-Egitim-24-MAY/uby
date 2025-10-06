@@ -6,11 +6,20 @@ import { useRouter } from "next/router";
 export const Card = ({ post }: { post: Post }) => {
   console.log("post: ", post);
   return (
-    <Link href={`/kurslar/${post.categories[0].slug.current}/${post.slug.current}`} className="h-auto">
+    <Link
+      href={`/kurslar/${
+        typeof post.categories?.[0]?.slug === "string"
+          ? post.categories?.[0]?.slug
+          : post.categories?.[0]?.slug?.current
+      }/${
+        typeof post.slug === "string" ? post.slug : post.slug.current
+      }`}
+      className="h-auto"
+    >
       <div className="w-full">
         <Image
-          src={post.mainImage.asset.url}
-          alt={post.mainImage.alt}
+          src={post.mainImage?.asset?.url ?? ""}
+          alt={post.mainImage?.alt ?? ""}
           width={400}
           height={0}
           className="w-full h-auto object-cover"
