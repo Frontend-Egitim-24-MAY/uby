@@ -18,19 +18,22 @@ export default function NewsAndBlog() {
     getData();
   }, []);
 
-  
   const news = data.slice(0, 3);
   const blogs = data.slice(3, 6);
 
   return (
     <div className="container mx-auto my-12 px-4">
       <div className="flex gap-8">
-     
         <div className="flex-1">
-          <h2 className="text-2xl  mb-4 border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-primary font-bold">Blog</h2>
+          <h2 className="text-2xl  mb-4 border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer text-primary font-bold">
+            Blog
+          </h2>
           <div className="grid grid-cols-3 gap-4">
             {news.map((post) => {
-              const slug = typeof post.slug === "string" ? post.slug : (post.slug as any)?.current;
+              const slug =
+                typeof post.slug === "string"
+                  ? post.slug
+                  : (post.slug as any)?.current;
               return (
                 <Link
                   key={post._id}
@@ -57,12 +60,16 @@ export default function NewsAndBlog() {
           </div>
         </div>
 
-        
         <div className="w-80">
-          <h2 className="text-2xl text-primary font-bold mb-4 border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer">News</h2>
+          <h2 className="text-2xl text-primary font-bold mb-4 border-primary/40 border-b-2 hover:border-primary duration-200 cursor-pointer">
+            News
+          </h2>
           <div className="flex flex-col gap-4">
             {blogs.map((post) => {
-              const slug = typeof post.slug === "string" ? post.slug : (post.slug as any)?.current;
+              const slug =
+                typeof post.slug === "string"
+                  ? post.slug
+                  : (post.slug as any)?.current;
               return (
                 <Link
                   key={post._id}
@@ -81,7 +88,7 @@ export default function NewsAndBlog() {
                   </div>
                   <div>
                     <h4 className="font-semibold">{post.title}</h4>
-                    <p className="text-sm text-gray-600">{post.description}</p>
+                    <p className="text-sm text-gray-600">{post.title}</p>
                   </div>
                 </Link>
               );

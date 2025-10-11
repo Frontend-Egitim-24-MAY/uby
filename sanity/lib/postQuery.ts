@@ -30,6 +30,7 @@ export const getAllPosts = async (): Promise<{
                 name,
                description,
             },
+            "seo": seo
         }`;
 
   try {
@@ -47,11 +48,13 @@ export const getAllPosts = async (): Promise<{
   }
 };
 
-export const getPostBySlug = async (slug: string): Promise<{
+export const getPostBySlug = async (
+  slug: string
+): Promise<{
   error: string | null;
   data: Post[] | null;
 }> => {
-  const query = groq`*[_type == "post" && slug.current == $slug]{
+  const query = groq`*[_type == "post" && slug.current == $slug][0]{
         _id,
         title,
         slug,
@@ -63,7 +66,8 @@ export const getPostBySlug = async (slug: string): Promise<{
         },
         content,
         "categories": categories[]->{title, description, slug},
-        "author": author->{_id, name, description}
+        "author": author->{_id, name, description},
+        "seo": seo
     }`;
 
   try {
@@ -75,5 +79,3 @@ export const getPostBySlug = async (slug: string): Promise<{
     return { error: "Beklenmeyen bir hata olustu", data: null };
   }
 };
-
-
